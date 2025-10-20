@@ -1,4 +1,4 @@
-from funcoes import limpar_tela, pausar
+from funcoes import deletar_todas_contas, limpar_tela, pausar
 from funcoes import cadastrar, ver_contas, editar_conta, deletar_conta, exportar_conta, sair_sistema
 
 
@@ -12,8 +12,9 @@ while main:
     [2] - Ver contas
     [3] - Editar conta
     [4] - Deletar conta
-    [5] - Exportar contas
-    [6] - Sair do sistema
+    [5] - Deletar todas as contas
+    [6] - Exportar contas como .CSV
+    [7] - Sair do sistema
     ''')
     opcao = input('Escolha uma das opções acima: ')
     if opcao == '1':
@@ -25,8 +26,10 @@ while main:
     elif opcao == '4':
         deletar_conta()
     elif opcao == '5':
-        exportar_conta()
+        deletar_todas_contas()
     elif opcao == '6':
+        exportar_conta()
+    elif opcao == '7':
         sair_sistema()
         main = False
     else:

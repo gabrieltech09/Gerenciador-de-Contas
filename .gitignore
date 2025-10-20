@@ -1,0 +1,8 @@
+contas.json
+dist/
+build/
+*.spec
+*.exe
+*.zip
+__pycache__/
+.vscode/
